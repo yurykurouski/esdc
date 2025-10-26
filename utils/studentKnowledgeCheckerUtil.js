@@ -1,4 +1,3 @@
-
 /**
  * The function takes an object with the student's answers and compares them with the correct answers.
  * @param {Object} studentAnswers - Student answers in the format { question1: answer1, question2: answer2, ... }.
@@ -19,7 +18,7 @@ export function checkStudentKnowledge(studentAnswers, correctAnswers) {
     }
   }
 
-  for (let key of studentKeys) {
+  for (const key of studentKeys) {
     if (studentAnswers[key] !== correctAnswers[key]) {
       return false;
     }
