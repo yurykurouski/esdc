@@ -1,3 +1,3 @@
-module.exports = {
-  presets: ['@babel/preset-env'],
-};
+import config from '../babel.config.cjs';
+
+export default config;
